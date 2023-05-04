@@ -1,0 +1,24 @@
+.paginationSlider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .paginationSlider button {
+    width: 8px;
+    height: 8px;
+    border: none;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
+  }
+  
+  .paginationSlider button:hover {
+    cursor: pointer;
+  }
+  
+  .paginationSlider button.active {
+    background-color: #000;
+  }
+  

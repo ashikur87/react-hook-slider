@@ -1,0 +1,97 @@
+.slider {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slideContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.slide {
+    width: 200px;
+    height: 150px;
+    margin-right: 1rem;
+    background-color: #0AC0E1;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    /* padding: 1%; */
+    /* overflow: hidden; */
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 150px;
+    left: 80px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid #0AC0E1;
+    overflow: hidden;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    /* margin: 0 auto; */
+    /* margin-left: 50px; */
+}
+
+.description {
+    text-align: center;
+    padding: 5%;
+}
+
+.name {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+/* .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+} */
+
+/* .pageItem {
+    margin-right: 0.5rem;
+    cursor: pointer;
+} */
+
+/* .pageItem.active {
+    text-decoration: underline;
+} */
+/* dots */
+.paginationSlider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paginationSlider button {
+    width: 8px;
+    height: 8px;
+    border: none;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.paginationSlider button:hover {
+    cursor: pointer;
+}
+
+.paginationSlider button.active {
+    background-color: #000;
+}
